@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/minimalist_b"
+    android:orientation="vertical"
+    tools:context=".StartQuiz">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/you_txt">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="YOU\n"
+            android:textSize="65dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:paddingTop="105dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/dont_txt">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="̶D̶O̶N̶'̶T̶\n"
+            android:textSize="65dp"
+            android:textColor="@color/hint"
+            android:textAlignment="center"
+            android:paddingTop="195dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/belong_txt">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="BELONG\n HERE"
+            android:textSize="65dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:paddingTop="275dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/belong_txt">
+
+        <Button
+            android:id="@+id/skip_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_edit_background"
+            app:cornerRadius="32dp"
+            android:textColor="@color/white"
+            android:text="SKIP"/>
+        <View
+            android:layout_width="15dp"
+            android:layout_height="10dp"/>
+        <Button
+            android:id="@+id/start_btnn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_edit_background"
+            app:cornerRadius="32dp"
+            android:textColor="@color/white"
+            android:text="START"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
